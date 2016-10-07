@@ -19,6 +19,7 @@ public class ObjectPoolTest {
         private static ObjectPool<TestPoolable> pool;
 
         static {
+            //noinspection unchecked
             pool = ObjectPool.create(4, new TestPoolable(0,0));
         }
 
